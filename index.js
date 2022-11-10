@@ -12,7 +12,7 @@ const posts = [
         name: "Gustave Courbet",
         username: "gus1819",
         location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
+        avatar: "avatar-courbet.jpg",
         post: "images/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
@@ -36,13 +36,14 @@ let likesEl = document.querySelector(".likes")
 let userComment = document.getElementById("user-comment")
 let userLike = document.getElementById("user-like")
 
+
 function renderPage(name) {
     for(let i = 0; i < posts.length; i++) {
         if (posts[i].name === name) {
             nameLocation.innerHTML = `<h2 class="name">${posts[i].name}</h2>
                                       <h3 class="location">${posts[i].location}</h3>`
-            imgDiv.innerHTML = `<img class="avatar" alt="avatar" src=${posts[i].avatar} >`
-            postReact.innerHTML = `<img class="post" alt="post" src=${posts[i].post} >`
+            imgDiv.innerHTML = `<img class="avatar" alt="avatar" src=${posts[i].avatar}>`
+            postReact.innerHTML = `<img class="post" alt="post" src=${posts[i].post}>`
             userLike.innerHTML = `<p class="likes">${posts[i].likes} likes</p>`
             userComment.innerHTML = `<span>${posts[i].username}</span> ${posts[i].comment}`
         }
