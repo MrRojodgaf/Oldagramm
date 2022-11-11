@@ -13,7 +13,7 @@ const posts = [
         username: "gus1819",
         location: "Ornans, France",
         avatar: "images/avatar-courbet.jpg",
-        post: "post-courbet.jpg",
+        post: "images/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
@@ -21,8 +21,8 @@ const posts = [
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
-        avatar: "avatar-ducreux.jpg",
-        post: "post-ducreux.jpg",
+        avatar: "images/avatar-ducreux.jpg",
+        post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }
@@ -42,7 +42,7 @@ function renderPage(name) {
         if (posts[i].name === name) {
             nameLocation.innerHTML = `<h2 class="name">${posts[i].name}</h2>
                                       <h3 class="location">${posts[i].location}</h3>`
-            imgDiv.innerHTML = `<img class="avatar" alt="avatar" src=${posts[i].avatar}>`
+            imgDiv.innerHTML = `<img class="avatar" alt="avatar" src="images/post-ducreux.jpg">`
             postReact.innerHTML = `<img class="post" alt="post" src=${posts[i].post}>`
             userLike.innerHTML = `<p class="likes">${posts[i].likes} likes</p>`
             userComment.innerHTML = `<span>${posts[i].username}</span> ${posts[i].comment}`
