@@ -6,7 +6,7 @@ html, body {
 .container {
     width: 375px;
     margin: 0 auto;
-    border: 1px solid #c6c6c6;
+    border: 2px solid #c6c6c6;
     border-radius: 4px;
 }
 
