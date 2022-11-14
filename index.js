@@ -50,7 +50,7 @@ function renderPage(name) {
     }
 }
 
-renderPage("Joseph Ducreux")
+renderPage("Gustave Courbet")
 
 
 function renderLike(like){
